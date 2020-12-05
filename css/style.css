@@ -1,0 +1,230 @@
+body {
+    font-family: 'Muller', 'Muller-Medium', 'Muller-Bold', "Muller-ExtraBold", Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Обнуляем отступы (бутстрап добавляет свои, они нам будут мешать) */
+h1,
+p {
+    margin: 0;
+}
+
+/*   Начало блока header   */
+
+.header {
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 34px;
+}
+
+.header h1 {
+    color: #6c1c02;
+    font-family: 'Muller-Bold';
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+
+.header p {
+    color: #000000;
+    font-size: 18px;
+}
+
+.header-bold {
+    font-family: 'Muller-Bold';
+}
+
+.header-extrabold {
+    font-family: 'Muller-ExtraBold';
+}
+
+/*   Конец блока header   */
+
+/*   Начало блока main-block   */
+
+.main-block {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.door-box {
+    box-sizing: border-box;
+    padding: 40px 60px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/*   Эффект при наведении   */
+.door-box:hover {
+    border-radius: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    padding: 38px 58px;
+    box-shadow: 10px -20px 20px rgba(128, 128, 128, 0.432);
+}
+
+
+.door-box img {
+    max-width: 100%;
+}
+
+.door-title {
+    color: #393939;
+    font-size: 16px;
+    margin-top: 28px;
+    min-height: 34px;
+}
+
+.door-title span {
+    display: block;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
+.door-cost {
+    color: #393939;
+    font-family: "Muller-Medium";
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.door-cost span {
+    font-family: "Muller-Bold";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button-block {
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+button {
+    color: #ffffff;
+    font-family: "Muller-Bold";
+    font-size: 18px;
+    font-weight: 400;
+    box-shadow: 0 9px 21px rgba(0, 0, 0, 0.15);
+    background-color: #e70000;
+    padding: 28px 46px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+/*   Эффекты кнопки   */
+/*   - при наведении   */
+button:hover {
+    color: rgb(253, 212, 205);
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 10px -20px 20px salmon;
+    text-decoration: underline;
+}
+
+/*    - При нажатии   */
+button:focus {
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 5px -10px 15px salmon;
+}
+
+/*   Конец блока main-block   */
+
+/*   Медиа запросы под разные размеры экранов   */
+
+@media (max-width: 1024px) {
+    .door-box {
+        padding: 40px 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 22px;
+    }
+
+    .header h1 {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 377px) and (max-width: 540px) {
+    .header {
+        margin-bottom: 0;
+    }
+
+    .main-block {
+        margin-bottom: 0;
+    }
+
+    .header h1 {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+
+    .button-block {
+        padding: 20px 10px 0;
+    }
+
+    button span {
+        display: block;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+    .header {
+        margin-bottom: 0;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .main-block {
+        margin-bottom: 0;
+    }
+
+    .door-box {
+        padding: 30px 45px;
+        margin-top: 50px;
+    }
+
+    .door-title {
+        color: black;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .door-title span {
+        color: rgba(0, 0, 0, 0.925);
+    }
+
+    .door-cost {
+        color: black;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .door-cost span {
+        font-size: 16px;
+    }
+
+    .button-block {
+        padding: 20px 10px 0;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 20px 38px;
+    }
+
+    button span {
+        display: block;
+    }
+}
+
+/*   Конец блока медиа запросов */
